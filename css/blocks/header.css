@@ -1,0 +1,71 @@
+.header {
+    /* Отступы по самому большому элементу (у нас по кнопке) */
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.header-row {
+    display: flex; /* Выстраиваем элементы в линию (дефолт по левой стороне) */
+    align-items: center; /* Выравнивание по поперечной оси по центру */
+    justify-content: space-between; /* Раскидать элементы про краям (первый в начале, последний в конце) */
+}
+
+.header-logo {
+    
+}
+
+.header-nav {
+    font-weight: 500;
+    color: #292929;
+}
+
+.header-nav ul {
+    display: flex; /* Располагаем текст в шапке друг ЗА другом, а не НАД */
+}
+
+/* Можно ТАК:
+.header-nav li {
+    margin-right: 70px; Отступ справа от li-шек для всех
+}
+
+.header-nav li:last-child {
+    margin-right: 0px;  Для последней li-шки отступ справа 0px 
+} */
+
+/* Можно ТАК: 
+.header-nav li:not(:last-child) {
+    margin-right: 70px; Отступ после li-шек КРОМЕ ПОСЛЕДНЕЙ
+} */
+
+/* А можно вообще вот ТАК: */
+.header-nav li + li {
+    margin-left: 70px; /* Отступ ПЕРЕД li-шками КРОМЕ ПЕРВОЙ */
+}
+
+.header-nav a {
+    transition: color 0.2s ease; /* Плавный переход для color за 0,2 сек, временая функция easy */
+}
+
+.header-nav a:hover {
+    color: #01996d; /* При наведении в шапке на ссылку она делается этим цветом */
+}
+
+.header-login a {
+    color: #000;
+    transition: color 0.2s ease;
+}
+
+.header-login a:hover {
+    color: #01996d;
+}
+
+.btn, a.btn {
+    /* Переопределяем поведение от ссылок для кнопки */
+    height: 51px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #01996d;
+    color: #fff;
+    font-size: 20px;
+}
