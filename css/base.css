@@ -1,0 +1,27 @@
+body {
+    font-family: 'Lato', sans-serif; /* sans-serif - семейство без засечек если не подгрузится Lato */
+    font-weight: 400; /* Дефолт жирнота*/
+    font-size: 20px; /* В проекте основной шрифт 20px, чтоб каждый раз не задавать */
+}
+
+/* Utility - утилитарные классы (что-то полезное) */
+
+.none {
+    display: none !important; /* important чтобы его нельзя было перебить */
+}
+
+.visually-hidden {
+    /* Делаем элемент визуально скрытым на странице (он есть, его считывают устройства) */
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+/* Grid (сетка, но не css grid) */
+
