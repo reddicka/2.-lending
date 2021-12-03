@@ -1,0 +1,90 @@
+/* Сброс стилей */
+*,
+*::before,
+*::after {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    box-sizing: border-box;
+}
+
+/* Сброс ссылок */
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+/* Сброс Common (общие вещи) */
+
+aside, nav, footer, header, section, main {
+    display: block; /* Показываем, что это блоки, но современные браузеры и так знают (можно опустить) */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit; /* Наследование */
+    font-weight: inherit; /* Насыщенность шрифта (жирный, не жирный) */
+    line-height: inherit; /* Множитель межстрочного интервала */
+}
+
+p + p {
+    margin-top: 1em; /* Любой азбзац кроме первого. Для него отступ сверху 1em (н-р шрифт был 16 - отступ 16). Для корректных отступов между абзацами. Мало ли еще появится абзац */
+}
+
+ul {
+    list-style: none; /* Сброс кружочков, маркеров и т.д. Есть OrderedList (нумерованный), его не трогаем и UnOrderedList */
+}
+
+img, svg {
+    vertical-align: top; /* Для img, у него по умолчанию есть отступ снизу (не баг, а фича типа) */
+    max-width: 100%; /* Чтобы картинка не выходила за размеры контейнера (для большой н-р). Когда надо чтобы картинка вылазила - отменяем эту тему */
+    height: auto;
+}
+
+/* Сброс Form */
+
+input, textarea, button, select {
+    font-family: inherit; /* По умелчанию не наследуют fpnt-family, у них свой */
+    font-size: inherit;
+}
+
+input::-ms-clear{
+    display: none; /* Убираем крестик в IE в input (на вводе) */
+}
+
+button, input[type="submit"] {
+    /* Сброс стандартной стилизации кнопок и полей ввода */
+    display: inline-block; /* Чтобы просто заверстать и они встали в одну линию как блоки */
+    box-shadow: none; /* Сброс тени */
+    background-color: transparent; /* Прозрачный цвет фона */
+    background: none; /* Сброс фона */
+    cursor: pointer; /* Указатель стал пальцем */
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0; /* Сброc для Mozilla */
+    border: 0;
+}
+
+label {
+    cursor: pointer; /* Хз, для связки input и label когда вводишь текст, а там "введи текст" (вроде так) */
+}
+
+legend {
+    display: block;
+}
