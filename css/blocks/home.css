@@ -1,0 +1,33 @@
+.home {
+    padding: 175px 0; /* Сверху, снизу 175, слева, справа 0 */
+    min-height: 895px;
+    background-color: bisque;
+}
+
+.home-content {
+max-width: 440px; /* Минимальная ширина для смартфона - 320px, поэтому контент в home должен сам сжаться */
+}
+
+.home-heading {
+    color: #01996d;
+    font-family: 'Georgia', serif; /* Georgia основной, но мало ли не загрузится - будет сериф (полный)))0)0 */
+    font-weight: 700; /* Bold */
+    font-size: 65px;
+}
+
+.home-heading + * {
+    margin-bottom: 30px; /* Всегда будет отступ между home-heading'ом и любым элементом снизу (конкретно тут - лишнее) */
+}
+
+.home-text {
+    color: #484848;
+    line-height: 144.5%; /* Межстрочный интервал */ 
+}
+
+.home-text + * {
+    margin-bottom: 30px; /* Всегда будет отступ между home-heading'ом и любым элементом снизу (конкретно тут - лишнее) */
+}
+
+.home-btn {
+
+}
