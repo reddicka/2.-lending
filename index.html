@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="./css/blocks/how-it-works.css">
     <link rel="stylesheet" href="./css/blocks/story.css">
     <link rel="stylesheet" href="./css/blocks/product.css">
+    <link rel="stylesheet" href="./css/blocks/avatar.css">
+    <link rel="stylesheet" href="./css/blocks/card.css">
+    <link rel="stylesheet" href="./css/blocks/footer.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="./css/fonts/Georgia/stylesheet.css">
     <link rel="stylesheet" href="./css/fonts/Lato/stylesheet.css">
@@ -48,7 +51,7 @@
     </header>
 
     <main>
-        <section class="home none">
+        <section class="home">
             <div class="container">
                 <div class="home-content">
                     <h1 class="home-heading">Be aware, Manage well.</h1>
@@ -67,7 +70,7 @@
             </div>
         </section>
 
-        <section class="how-it-works none">
+        <section class="how-it-works">
             <div class="container">
 
                 <div class="how-it-works-header">
@@ -83,7 +86,7 @@
                 <div class="how-it-works-steps">
 
                     <div class="step">
-                        <h3 class="step-heading" data-number="01" >Personalize</h3>
+                        <h4 class="step-heading" data-number="01" >Personalize</h4>
                         <div class="step-text">
                             <p>
                                 Answer a quick survey about how you express yourself, what causes you stress, and what area would you like to work on. This way, we can fully personalize your journal!  
@@ -96,7 +99,7 @@
                     <!-- /step 1 -->
 
                     <div class="step">
-                        <h3 class="step-heading" data-number="02" >Write & Understand</h3>
+                        <h4 class="step-heading" data-number="02" >Write & Understand</h4>
                         <div class="step-text">
                             <p>
                                 Write, draw, reflect, understand. Alivio will guide you through the prompts and will help you manage your stress!  
@@ -109,7 +112,7 @@
                     <!-- /step 2 -->
 
                     <div class="step">
-                        <h3 class="step-heading" data-number="03" >Alivio!</h3>
+                        <h4 class="step-heading" data-number="03" >Alivio!</h4>
                         <div class="step-text">
                             <p>
                                 Now you are aware, and have a way to manage and overcome your own stress. What are you waiting for? Alivio today!
@@ -126,7 +129,7 @@
             </div>
         </section>
 
-        <section class="story none">
+        <section class="story">
             <div class="container container-wide">
                 <div class="story-row">
                     <div class="story-content">
@@ -158,7 +161,30 @@
                 <div class="product-row">
 
                     <div class="product-img-wrapper">
-                        <img src="./img/product/photo.jpg" alt="" class="product-img">
+                        <img src="./img/product/photo.jpg" alt="product-img" class="product-img">
+
+                        <div class="product-card">
+                            <div class="card">
+
+                                <h3 class="card-title">Customized For</h3>
+
+                                <div class="card-avatar">
+                                    <div class="avatar">
+                                        <img class="avatar-img" src="./img/product/avatar.jpg" alt="Avatar">
+                                        <h4 class="avatar-name">Mikayla</h4>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-contents">
+                                    <h3 class="card-contents-title">Your custom contents</h3>
+                                    <ul>
+                                        <li>Understand Your Stress</li>
+                                        <li>Anger Management</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
 
                     <div class="product-content">
@@ -175,11 +201,24 @@
             </div>
         </section>
 
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <img class="footer-logo" src="./img/footer-logo.svg" alt="Logo">
+
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="#">Why Alivio</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </footer>
+
     </main>
-
-    <footer>
-
-    </footer>
-
 </body>
 </html>

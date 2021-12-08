@@ -9,11 +9,21 @@
 }
 
 .product-img-wrapper {
+    position: relative;
     margin-right: 86px;
+    padding-left: 60px;
+    padding-bottom: 74px;
 }
+
 
 .product-img {
     border-radius: 18px;
+}
+
+.product-card {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
 }
 
 .product-content {
