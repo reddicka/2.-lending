@@ -1,0 +1,56 @@
+.product {
+    padding-top: 120px;
+    padding-bottom: 160px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-img-wrapper {
+    margin-right: 86px;
+}
+
+.product-img {
+    border-radius: 18px;
+}
+
+.product-content {
+    max-width: 584px;
+}
+
+.product-content-title {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 157%;
+}
+
+.product-content-title + * {
+    margin-top: 10px;
+}
+
+.product-content-subtitle {
+    font-family: "Georgia", serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #01996d;
+    line-height: 157%;
+}
+
+.product-content-subtitle + * {
+    margin-top: 20px;
+}
+
+.product-content-text {
+    max-width: 530px;
+    line-height: 144.5%;
+}
+
+.product-content-text + * {
+    margin-top: 40px;
+}
+
+.product-content-btn {
+    display: flex;
+}

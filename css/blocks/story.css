@@ -1,0 +1,66 @@
+.story {
+    padding: 229px 0 176px; /* 229 сверху, 176 снизу */
+    background-color: #245852;
+    color: #fff;
+}
+
+.story-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-content {
+    margin-right: 30px;
+    max-width: 580px;
+}
+
+.story-heading {
+    font-size: 50px;
+    line-height: 157%;
+    font-weight: 700;
+    font-family: "Georgia", serif;
+}
+
+.story-heading + * {
+    margin-top: 33px;
+}
+
+.story-text {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 157%;
+}
+
+.story-text + * {
+    margin-top: 57px;
+}
+
+.story-btn {
+    display: flex;
+}
+
+.story-video {
+    width: 895px;
+    position: relative;
+}
+
+.story-video-btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.story-video-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.story-video-object {
+
+}
