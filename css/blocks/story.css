@@ -41,6 +41,8 @@
 }
 
 .story-video {
+    border-radius: 18px;
+    overflow: hidden;
     width: 895px;
     position: relative;
 }
