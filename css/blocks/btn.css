@@ -1,0 +1,29 @@
+.btn, a.btn {
+    /* Ссылка по умолчанию - это inline-элементы, а для них нельзя указывать высоту, паддинги и т.д., поэтому: */
+    display: inline-block;
+    
+    min-height: 51px; /* Минимальная высота кнопки с заделом, если быдет много контента, высота может вырасти */
+    display: flex; /* Выносим кнопку во флекс-бокс */
+    justify-content: center; /* Выравниваем контент внутри кнопки по центру (горизонтально) */
+    align-items: center; /* ..(вертикально) */
+    line-height: 1;
+
+    /* Переопределяем поведение для кнопки, чтобы не было подмешивания от ссылок */
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #01996d;
+    color: #fff;
+    font-size: 20px; /* Хоть и указывали дефолт размер, но это все же кнопка, а она может быть хоть где с разными фонтсайзами (н-р шапка, подвал и д.т.) */
+    font-weight: 400;
+    border-radius: 4px;
+    transition: opacity 0.2s ease;
+}
+
+.btn:hover, a.btn:hover {
+    opacity: 0.8;
+    color: #fff;
+}
+
+.btn-big, a.btn-big {
+    min-height: 65px;
+}
