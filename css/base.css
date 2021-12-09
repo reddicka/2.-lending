@@ -7,6 +7,12 @@ body {
     /* min-width: 1600px; Можно раскомментировать (читай meta viewport) */
 }
 
+@media (max-width: 991px) {
+    body {
+        font-size: 18px;
+    }
+}
+
 /* Utility - утилитарные классы (что-то полезное) */
 
 .none {
@@ -37,6 +43,19 @@ body {
     margin-right: auto;
 }
 
+@media (max-width: 1399px) {
+    /* Добавили медиа-запрос для экранов шириной до 1399px включительно */
+    .container {
+        width: 100%; /* Переопределяем контейнер */
+    }
+}
+
 .container-wide {
     width: 1536px; /* 1506px под контент и по 15px поля */
+}
+
+@media (max-width: 1536px) {
+    .container-wide {
+        width: 100%;
+    }
 }

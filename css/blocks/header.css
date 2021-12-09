@@ -65,9 +65,36 @@
 .header-login-link {
     color: #000;
     transition: color 0.2s ease;
+    margin-top: -1px; /* Костыль исправления неровности текста "Nav и Sign in" */
 }
 
 .header-login-link:hover {
     color: #01996d;
 }
 
+@media (max-width: 1199px) {
+    /* Цифры подгоняются дерганием размера окна в браузере в коде элемента */
+    .header-row {
+        justify-content: space-between;
+    }
+
+    .header-nav {
+        margin-left: 30px;
+    }
+
+    .header-nav li + li {
+        margin-left: 50px;
+    }
+
+    .header-login {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    /* Убираются вообще для выпадающей менюшки (но скрипт пока не цепляем) */
+    /* Вообще до 991 на бутстрапе считается мобилкой вродь как */
+    .header-nav, .header-login {
+        display: none;
+    }
+}

@@ -50,3 +50,24 @@ max-width: 440px; /* Минимальная ширина для смартфон
     width: 100%;
     object-fit: cover; /* Корректно масштабируется и полностью заполняет размер тега img */
 }
+
+@media (max-width: 991px) {
+    /* Вообще до 991 на бутстрапе считается мобилкой вродь как */
+    .home {
+        padding: 40px 0;
+        min-height: unset;
+    }
+
+    .home-heading {
+        font-size: 45px;
+        line-height: 1.2;
+    }
+
+    .home-text {
+        margin-top: 30px;
+    }
+
+    .home-bg-img img {
+        opacity: 0.5; /* Тут надо сделать прозрачной картинку немного, а то текст наезжает и не видно */
+    }
+}
