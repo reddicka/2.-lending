@@ -37,7 +37,7 @@ videoBtn.addEventListener('click', function () {
         videoFile.play(); // Делаем плей
         videoBtnIcon.src = "./img/story/pause-white.svg"; // Меняем иконку
 
-        videoOverlay.onmouseleave = toggleOverlay; // Вызов функции отслеживания ливания курсора с оверлея
+        videoOverlay.onmouseleave = toggleOverlay; // Обращаемся квйвйВызов функции отслеживания ливания курсора с оверлея
         videoOverlay.onmouseenter = toggleOverlay; // Вызов функции отслеживания попадания курсора на оверлей
 
     } else {
