@@ -56,15 +56,23 @@
 
 .story-video-overlay {
     position: absolute;
+    z-index: 99;
     left: 0;
     top: 0;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s ease;
+}
+
+.story-video-overlay.hidden {
+    opacity: 0;
 }
 
 .story-video-object {
-
+    max-width: 100%; /* Чтобы не выходило за пределы контейнера */
+    height: auto; /* Высота авто */
+    vertical-align: top;
 }
 
 

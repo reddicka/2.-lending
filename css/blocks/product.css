@@ -64,3 +64,64 @@
 .product-content-btn {
     display: flex;
 }
+
+@media (max-width: 1299px) {
+    .product {
+        padding: 80px;
+    }
+
+    .product-img-wrapper {
+        flex: 1 0 auto; /* 'flex-grow' 1 - этот элемент будет увеличиваться больше, чем другие элементы; 'flex-shrink' 0 - не будет сжиматься; 'flex-basis' auto - размер будет автоматический */
+        flex-basis: 50%; /* Размер флекс-элемента по основной оси */
+    }
+
+    .product-content-subtitle {
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    .product-card {
+        top: 60%;;
+    }
+}
+
+@media (max-width: 991px) {
+    .product {
+        padding-top: 40px;
+        padding-bottom: 80px;
+    }
+    .product-row {
+        flex-direction: column-reverse;
+    }
+
+    .product-content {
+        margin-bottom: 40px;
+    }
+
+    .product-content-subtitle {
+        font-size: 30px;
+    }
+
+    .product-card {
+        position: relative;
+        z-index: 2;
+        margin-top: -10%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-img-wrapper {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .product {
+        padding-bottom: 40px;
+    }
+    .product-card {
+        margin: -30% 15px 0;
+    }
+}

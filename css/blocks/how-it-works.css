@@ -113,7 +113,7 @@
         padding-bottom: 30px;
     }
 
-    .how-it-works {
+    .how-it-works-subtitle {
         line-height: 130%;
         font-size: 40px;
     }
@@ -128,7 +128,7 @@
     }
 }
 
-@media (max-width: 1389px) {
+@media (max-width: 1399px) {
     .step:nth-child(2), .step:nth-child(3) {
         padding-top: 0px;
     }

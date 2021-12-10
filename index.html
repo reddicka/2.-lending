@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="./css/blocks/avatar.css">
     <link rel="stylesheet" href="./css/blocks/card.css">
     <link rel="stylesheet" href="./css/blocks/footer.css">
+    <link rel="stylesheet" href="./css/blocks/mobile-nav-button.css">
+    <link rel="stylesheet" href="./css/blocks/mobile-nav.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="./css/fonts/Georgia/stylesheet.css">
     <link rel="stylesheet" href="./css/fonts/Lato/stylesheet.css">
@@ -30,8 +32,11 @@
         <!-- Нормальная тема сделать класс header в тег header. Так не потянутся левые стили если будет еще один тег header -->
         <div class="container">
             <div class="header-row">
+
                 <!-- Пока без BEN-нейминга, но вообще надо по-хорошему-->
                 <div class="header-logo"><img src="./img/Logo.svg" alt="Logo"></div>
+
+                <!-- HEAD NAVIGATION -->
                 <nav class="header-nav">
                     <ul>
                         <li><a href="#">Why Alivio</a></li>
@@ -40,20 +45,48 @@
                         <li><a href="#">Pricing</a></li>
                     </ul>
                 </nav>
+
+                <!-- HEAD LOGIN -->
                 <div class="header-login">
-                    
                     <a class="header-login-link" href="#">Sign in</a>
                     <a href="#" class="btn">Start Trial</a>
-                    
-                    
-
                 </div>
+
+                <!-- Кнопка навигации для мобилок -->
+                <button type="button" class="mobile-nav-button">
+                    <span class="mobile-nav-button__icon">
+
+                    </span>
+                </button>
+
             </div>
         </div>
     </header>
 
+    <!-- Менюшка под мобильную навигацию -->
+    <div class="mobile-nav">
+        <!-- Logo -->
+        <img class="mobile-nav-logo" src="./img/logo.svg" alt="Logo">
+
+        <!-- MOBILE NAV -->
+        <nav class="mobile-nav-list">
+            <ul>
+                <li><a href="#">Why Alivio</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Pricing</a></li>
+            </ul>
+        </nav>
+
+        <!-- MOBILE LOGIN -->
+        <div class="mobile-login">    
+            <a class="" href="#">Sign in</a>
+            <a href="#" class="btn btn-big">Start Trial</a>
+        </div>
+    </div>
+
     <main>
-        <section class="home none">
+        <section class="home">
             <div class="container">
                 <div class="home-content">
                     <h1 class="home-heading">Be aware, Manage well.</h1>
@@ -72,7 +105,7 @@
             </div>
         </section>
 
-        <section class="how-it-works none">
+        <section class="how-it-works">
             <div class="container">
 
                 <div class="how-it-works-header">
@@ -131,9 +164,10 @@
             </div>
         </section>
 
-        <section class="story none">
+        <section class="story">
             <div class="container container-wide">
                 <div class="story-row">
+
                     <div class="story-content">
                         <div class="story-heading">
                             <h2>Let's hear about Kayla's success story</h2>
@@ -145,15 +179,24 @@
                             <a href="#" class="btn btn-big">Let’s get started</a>
                         </div>
                     </div>
-                    <div class="story-video"> 
-                        
-                        <div class="story-video-overlay">
-                            <button class="story-video-btn">
-                                <img src="./img/story/play-white.svg" alt="Play">
+
+                    <div class="story-video">
+                        <!-- OVERLAY -->
+                        <div id="video-story-overlay" class="story-video-overlay">
+                            <button id="video-story-btn" class="story-video-btn">
+                                <img id="video-story-btn-icon" width="82" height="82" src="./img/story/play-white.svg" alt="Play">
                             </button>
-                        </div>
-                        <img src="./img/story/video-cover.jpg" alt="Video" class="story-video-object">
+                        </div> 
+
+                        <!-- КАРТИНКА
+                        <img src="./img/story/video-cover.jpg" alt="Video" class="story-video-object">  -->
+                        
+                        <!-- VIDEO -->
+                        <video class="story-video-object" id="video-story">
+                                <source src="./video/customer-story.mp4" type="video/mp4">
+                        </video>
                     </div>
+                    <!-- //story-video -->
                 </div>
             </div>
         </section>
@@ -202,8 +245,9 @@
                 </div>
             </div>
         </section>
+    </main>
 
-        <footer class="footer none">
+    <footer class="footer">
             <div class="container">
                 <div class="footer-content">
                     <img class="footer-logo" src="./img/footer-logo.svg" alt="Logo">
@@ -219,8 +263,8 @@
                     
                 </div>
             </div>
-        </footer>
+    </footer>
 
-    </main>
+    <script src="./js/main.js"></script>
 </body>
 </html>
